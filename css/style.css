@@ -1,0 +1,10 @@
+body {
+
+    background-image: url("../img/back9.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.row {
+    width: 100%;
+}
