@@ -5,63 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GifTastic</title>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
-
     
-<div class="back">
+    
 
 
 
 <div class="row">
-    <div class="col-12" id="col1">
-        <img class="img-fluid" src="img/header.png" id="header">
+    <div class="col-3" id="col1"></div>
+    <div class="col-6" id="col1">
+        <img class="img-fluid" src="img/header.png" id="">
     </div>
+    <div class="col-3" id="col1"></div>
 </div>
 
 
 
-<div class="containerAddgif">
-    <div class="row">
-        <div class="col-1" id="col1"></div>
-        <div class="col-3" id="col1">
 
+
+    <div class="row">
+        <div class="col-4" id="col1"></div>
+        <div class="col-4" id="search">
             <div class="form-group">
-                <label for="exampleFormControlInput1" id="addgif">Add your Gif here:</label>
+                <label for="exampleFormControlInput1" id="searchGifText">Search your Gif here:</label>
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Keanu Reaves, Coca-Cola, Basketball etc.">
             </div>
-
-            <button type="button" class="btn btn-outline-info">
+                    <div class="searchButtons">
+            <button type="button" class="btn btn-outline-info" id="SearchButton">
                 <img class="img-fluid" src="img/search-icon.png" width="24" height="24">
             Search
             </button>
 
-            <button type="button" class="btn btn-outline-danger">
+            <button type="button" class="btn btn-outline-danger" id="ClearButton">
                 <img class="img-fluid" src="img/delete-icon.png" width="24" height="24">
             Clear
             </button>
 
-            <button type="button" class="btn btn-outline-success">
+            <button type="button" class="btn btn-outline-success" id="addButton">
                 <img class="img-fluid" src="img/add-1-icon.png" width="24" height="24"> 
             Add
             </button>
+                    </div>
         </div>
+        <div class="col-4" id="col1"></div>
     </div>
-</div>
+   
 
 
 
 
-
-
-
-</div>
+    <div class="row">
+        <div class="col-4" id="col1"></div>
+        <div class="col-4">
+            <label for="exampleFormControlInput1" id="buttonhGifTags">Tags for you:</label>
+            <div>
+            <button type="button" class="btn btn-outline-dark" data-gif="bmw" id="buttonTags">BMW</button>
+            <button type="button" class="btn btn-outline-dark" data-gif="audi" id="buttonTags">Audi</button>
+            <button type="button" class="btn btn-outline-dark" data-gif="footBall" id="buttonTags">Football</button>
+            <button type="button" class="btn btn-outline-dark" data-gif="DuaLipa" id="buttonTags">Dua Lipa</button>
+            <button type="button" class="btn btn-outline-dark" data-gif="MortalKombat" id="buttonTags">Mortal Kombat</button>
+            <button type="button" class="btn btn-outline-dark" data-gif="Airplanes" id="buttonTags">Airplanes</button>
+            <button type="button" class="btn btn-outline-dark" data-gif="Nike" id="buttonTags">Nike</button>
+           </div>
+         </div>
+        <div class="col-4" id="col1"></div>
+    </div>
 
     
+
+<div class="row">
+    <div class="col-1"></div>
+    <div class="col-10" id="gifs"></div>
+    <div class="col-1"></div>
+</div>
+
+
+
+
+
+
+
+
+    
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/gifs.js"></script>
+
 </body>
 </html>

@@ -1,10 +1,44 @@
 body {
 
-    background-image: url("../img/back9.png");
+    background-image: url("../img/back950.png");
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .row {
+    padding-top: 20px;
     width: 100%;
 }
+
+.searchButtons {
+    margin-left: 25%;
+}
+
+#searchGifText  {
+    margin-left: 37%;
+    font-weight: 600;
+}
+
+#buttonhGifTags {
+    margin-left: 42%;
+    font-weight: 600;
+}
+
+#TagsForYou{
+    font-weight: 600;
+}
+
+#exampleFormControlInput1 {
+    border-radius: 10px;
+}
+
+#buttonTags {
+    color: #212529c2;
+    margin-bottom: 10px;
+    border-color: #2125297e;
+}
+
+#buttonTags:hover {
+    background-color: #2125297e;
+}
+
