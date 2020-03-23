@@ -27,11 +27,13 @@ function runQuarry(queryUrlGiphy) {
             var GiphyGifStill = response.data[i].images.fixed_height_still.url;
             var GiphyGifState = response.data[i].images.fixed_height.url;
             var GiphyRateUrl = response.data[i].rating;
+            var GiphyTitleUrl = response.data[i].title;
             
             var GiphyDiv = $("<div>");
                 GiphyDiv.attr("id", "gifs");
 
             var GiphyRate = $("<p>").text("Rating: " + GiphyRateUrl);
+            var GiphyTitle = $("<p>").text(GiphyTitleUrl);
 
             var GiphyGif = $("<img>");
                 GiphyGif.attr("src", GiphyGifStill);
@@ -39,8 +41,9 @@ function runQuarry(queryUrlGiphy) {
                 GiphyGif.attr("data-still", GiphyGifStill);
                 GiphyGif.on('click', Animate);
 
-                GiphyDiv.append(GiphyRate);
+                GiphyDiv.append(GiphyTitle);
                 GiphyDiv.append(GiphyGif);
+                GiphyDiv.append(GiphyRate);
                 
             $("#gifsDiv").prepend(GiphyDiv);
         }

@@ -14,7 +14,6 @@ footer {
     bottom: 0;
     width: 100%;
     height: 30px;
-    margin-top: 20px;
     font-weight: 600;
 }
 
@@ -86,6 +85,16 @@ footer {
 #searchRow {
     position: -webkit-sticky;
     position: sticky;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 0px;
+    padding: 5px;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.459);
+    color: #212529c2;
+        
 }
 
 

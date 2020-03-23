@@ -6,4 +6,8 @@ Link to Github Deployment
 https://yuriyhorbatenko.github.io/GifTastic
 
 Languages & Technologies used
+<<<<<<< HEAD
 HTML, CSS, API, Javascript, Jquery
+=======
+HTML, CSS, API, Javascript, Jquery
+>>>>>>> aa1b1d83eed5e67403bde1f2e6b83f074e2956f8
