@@ -19,7 +19,7 @@
 <div class="row">
     <div class="col-3" id="col1"></div>
     <div class="col-6" id="col1">
-        <img class="img-fluid" src="img/header.png" id="">
+        <img class="img-fluid" src="img/header.png" id="header">
     </div>
     <div class="col-3" id="col1"></div>
 </div>
@@ -28,7 +28,7 @@
 
 
 
-    <div class="row">
+    <div class="row" id="searchRow">
         <div class="col-4" id="col1"></div>
         <div class="col-4" id="search">
             <div class="form-group">
@@ -36,20 +36,22 @@
                 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Keanu Reaves, Coca-Cola, Basketball etc.">
             </div>
                     <div class="searchButtons">
+
             <button type="button" class="btn btn-outline-info" id="SearchButton">
                 <img class="img-fluid" src="img/search-icon.png" width="24" height="24">
-            Search
-            </button>
-
-            <button type="button" class="btn btn-outline-danger" id="ClearButton">
-                <img class="img-fluid" src="img/delete-icon.png" width="24" height="24">
-            Clear
+            Search Gif
             </button>
 
             <button type="button" class="btn btn-outline-success" id="addButton">
                 <img class="img-fluid" src="img/add-1-icon.png" width="24" height="24"> 
-            Add
+            Add to Tags
             </button>
+
+            <button type="button" class="btn btn-outline-danger" id="ClearButton">
+                <img class="img-fluid" src="img/delete-icon.png" width="24" height="24">
+            Clear All
+            </button>
+
                     </div>
         </div>
         <div class="col-4" id="col1"></div>
@@ -63,15 +65,7 @@
         <div class="col-4" id="col1"></div>
         <div class="col-4">
             <label for="exampleFormControlInput1" id="buttonhGifTags">Tags for you:</label>
-            <div>
-            <button type="button" class="btn btn-outline-dark" data-gif="bmw" id="buttonTags">BMW</button>
-            <button type="button" class="btn btn-outline-dark" data-gif="audi" id="buttonTags">Audi</button>
-            <button type="button" class="btn btn-outline-dark" data-gif="footBall" id="buttonTags">Football</button>
-            <button type="button" class="btn btn-outline-dark" data-gif="DuaLipa" id="buttonTags">Dua Lipa</button>
-            <button type="button" class="btn btn-outline-dark" data-gif="MortalKombat" id="buttonTags">Mortal Kombat</button>
-            <button type="button" class="btn btn-outline-dark" data-gif="Airplanes" id="buttonTags">Airplanes</button>
-            <button type="button" class="btn btn-outline-dark" data-gif="Nike" id="buttonTags">Nike</button>
-           </div>
+            <div id="tags"></div>
          </div>
         <div class="col-4" id="col1"></div>
     </div>
@@ -80,7 +74,9 @@
 
 <div class="row">
     <div class="col-1"></div>
-    <div class="col-10" id="gifs"></div>
+    <div class="col-10" id="">
+        <div class="images" id="gifsDiv"></div>
+    </div>
     <div class="col-1"></div>
 </div>
 
@@ -97,4 +93,5 @@
 <script type="text/javascript" src="js/gifs.js"></script>
 
 </body>
+<footer>Copyright&copy;</footer>
 </html>

@@ -5,13 +5,26 @@ body {
     background-repeat: no-repeat;
 }
 
+footer {
+    font-size: 15px;
+    text-align: center;
+    color: #212529;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
 .row {
     padding-top: 20px;
     width: 100%;
 }
 
 .searchButtons {
-    margin-left: 25%;
+    margin-left: 18%;
 }
 
 #searchGifText  {
@@ -20,8 +33,8 @@ body {
 }
 
 #buttonhGifTags {
-    margin-left: 42%;
     font-weight: 600;
+    margin-left: 42%;
 }
 
 #TagsForYou{
@@ -36,9 +49,99 @@ body {
     color: #212529c2;
     margin-bottom: 10px;
     border-color: #2125297e;
+    border-radius: 8px;
+    margin: 2px;
+    
 }
 
-#buttonTags:hover {
+#buttonTagsNew {
+
+    color: #212529c2;
+    margin-bottom: 10px;
+    border-color: #2125297e;
+    border-radius: 8px;
+    margin: 2px;
+
+}
+
+#buttonTags:hover, #buttonTagsNew:hover {
     background-color: #2125297e;
 }
+
+#resultgif {
+    padding: 5px;
+}
+
+#gifs {
+    float: left;
+    padding: 10px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+#header {
+    position: static;
+}
+
+#searchRow {
+    position: -webkit-sticky;
+    position: sticky;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
