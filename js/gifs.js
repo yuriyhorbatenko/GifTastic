@@ -6,11 +6,9 @@ var topics = ["BMW", "Audi", "Football", "Dua Lipa", "Mortal Kombat", "Airplanes
 
 var authKeyGiphy = "3q7G0RzvYaIOREuv0CawTAaXF5wWdWNe";
 
-var queryUrlGiphy = "http://api.giphy.com/v1/gifs/search?api_key=" + authKeyGiphy + "&q=";
+var queryUrlGiphy = "https://api.giphy.com/v1/gifs/search?api_key=" + authKeyGiphy + "&q=";
 
 var limit10Giphy = "&limit=10&offset=&rating=&lang=en";
-
-var limitNoneGiphy = "&limit=&offset=&rating=&lang=en";
 
 
 
@@ -90,6 +88,7 @@ function TagsForYou(){
 
 
 function addButton() {
+
         event.preventDefault();
         if ($("#exampleFormControlInput1").val().trim() == ""){
             alert("Please type something!");
@@ -149,6 +148,7 @@ $("#ClearButton").on("click", function() {
 
 
 $("#addButton").on("click", function(event) {
+
     if(!event.detail || event.detail == 1){
     
     addButton()
